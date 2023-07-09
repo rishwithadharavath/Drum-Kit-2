@@ -14,33 +14,36 @@ document.querySelectorAll(".drum")[i].addEventListener("click",function() {
   }) ;
     function makeSound(key){
       switch (key) {
-        case "w":
+        case "W":
           var drum_alert_1= new Audio('drum_alert_1.mp3');
           drum_alert_1.play();
           break;
-          case "a":
+          case "A":
           var drum_alert_2 = new Audio('drum_alert_2.mp3');
           drum_alert_2.play();
           break;
-          case "s":
+          case "S":
           var failuresound = new Audio('failuresound.mp3');
           failuresound.play();
           break;
-          case "d":
+          case "D":
           var loon= new Audio('loon.mp3');
           loon.play();
           break;
-          case "j":
+          case "J":
           var iphone= new Audio('iphone.mp3');
           iphone.play();
           break;
-          case "k":
+          case "K":
           var magic= new Audio('magic.mp3');
           magic.play();
           break;
-        default:
-          var ad = new Audio('ad.mp3');
-          ad.play();
+          case "L":
+            var ad = new Audio('ad.mp3');
+            ad.play();
+          break;
+        default: console.log(druminnerhtml);
+          
        }
     }
   function buttonanimation(currentkey) {
